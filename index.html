@@ -1,9 +1,13 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Drop10 - Premium & MOD APKs</title>
-  <meta name="description" content="Download the latest and greatest MOD APKs for free on Drop10. Fast, secure, and always updated.">  <!-- Tailwind CSS -->  <script src="https://cdn.tailwindcss.com"></script>  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">  <style>
+  <meta name="description" content="Download MOD APKs for free on Drop10. Secure & updated." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
     body {
       font-family: 'Inter', sans-serif;
       background-color: #0f172a;
@@ -13,8 +17,12 @@
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
-  </style></head>
-<body class="antialiased">  <!-- Header -->  <header class="bg-slate-900/80 backdrop-blur sticky top-0 z-40">
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="bg-slate-900/80 backdrop-blur sticky top-0 z-40">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
       <a href="/" class="text-3xl font-extrabold text-white">Drop<span class="text-blue-500">10</span></a>
       <ul class="flex space-x-4">
@@ -22,29 +30,46 @@
         <li><a href="/upload.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Upload APK</a></li>
       </ul>
     </nav>
-  </header>  <!-- Hero -->  <main class="container mx-auto px-4 py-12">
+  </header>
+
+  <!-- Hero -->
+  <main class="container mx-auto px-4 py-12">
     <section class="text-center mb-12">
       <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Your Ultimate App Hub.</h1>
-      <p class="text-lg text-slate-400 max-w-xl mx-auto">Discover and download thousands of MOD & Premium APKs safely and quickly. No fluff, just apps.</p>
-    </section><!-- Search -->
-<div class="max-w-xl mx-auto mb-10">
-  <input type="text" id="search-bar" placeholder="Search for an app..." class="w-full py-3 px-5 rounded-full bg-slate-800 text-white placeholder-slate-400 border-2 border-slate-600 focus:ring-2 focus:ring-blue-500 focus:outline-none">
-</div>
+      <p class="text-lg text-slate-400 max-w-xl mx-auto">Discover MOD & Premium APKs safely and quickly. Just like Play Store.</p>
+    </section>
 
-<!-- App Grid -->
-<section id="app-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
-<div id="no-results" class="text-center py-16 hidden">
-  <h3 class="text-2xl font-bold text-white">No Apps Found</h3>
-  <p class="text-slate-400 mt-2">Try searching for something else.</p>
-</div>
+    <!-- Search -->
+    <div class="max-w-xl mx-auto mb-10">
+      <input type="text" id="search-bar" placeholder="Search for an app..." class="w-full py-3 px-5 rounded-full bg-slate-800 text-white placeholder-slate-400 border-2 border-slate-600 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+    </div>
 
-  </main>  <!-- Footer -->  <footer class="bg-slate-900 mt-12">
+    <!-- App Grid -->
+    <section id="app-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+    <div id="no-results" class="text-center py-16 hidden">
+      <h3 class="text-2xl font-bold text-white">No Apps Found</h3>
+      <p class="text-slate-400 mt-2">Try searching something else.</p>
+    </div>
+  </main>
+
+  <!-- Native Banner Ad -->
+  <div class="container mx-auto px-4 mb-10">
+    <div id="native-banner" class="my-4 text-center">
+      <script type="text/javascript" src="https://hotbxegaha.today/process.js?id=1389181352&p1=sub1" async></script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 mt-12">
     <div class="container mx-auto px-8 py-6 text-center text-slate-400">
       <p>&copy; 2024 Drop10. All rights reserved.</p>
-      <p class="text-sm">Disclaimer: All apps are for promotional and educational purposes only.</p>
+      <p class="text-sm">Disclaimer: All apps are for educational purposes only.</p>
     </div>
-  </footer>  <!-- Main Script -->  <script>
-    const sheetUrl = "https://script.google.com/macros/s/AKfycbyA4Eck-UuCJFsBon3kOT5-ULyvw-KTw-EzN59YUD_i5CfuF5CxZTxryJnWEOnqG0Ws/exec";
+  </footer>
+
+  <!-- App Script -->
+  <script>
+    const sheetUrl = "https://script.google.com/macros/s/AKfycbxar3kGHjlA9losZ1EXj-pRykGx1gSDSYVGPskm1uBTRhNdhW9Mnuxuy2cGWwVInyI/exec";
 
     fetch(sheetUrl)
       .then(res => res.json())
@@ -65,7 +90,7 @@
                   <h2 class="text-xl font-bold mb-1">${app.name}</h2>
                   <p class="text-sm text-slate-400 mb-2">Version: ${app.version} • Size: ${app.size}</p>
                   <p class="text-sm text-slate-300 mb-3">${app.description}</p>
-                  <a href="${app.apk}" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg inline-block">⬇️ Download</a>
+                  <a href="app.html?id=${app.id}" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg inline-block">View Details</a>
                 </div>
               `;
             });
@@ -80,5 +105,12 @@
           renderApps(filtered);
         });
       });
-  </script>  <!-- Adsterra + Hotbxegaha -->  <script type='text/javascript' src='//pl26980483.profitableratecpm.com/f6/e4/d2/f6e4d268b01effab1ffe5747e27146b1.js'></script>  <script type="text/javascript" src="https://hotbxegaha.today/process.js?id=1389179118&p1=sub1&p2=sub2&p3=sub3&p4=sub4" async></script></body>
+  </script>
+
+  <!-- Adsterra Social Bar -->
+  <script type="text/javascript" src="//pl26980483.profitableratecpm.com/f6/e4/d2/f6e4d268b01effab1ffe5747e27146b1.js"></script>
+
+  <!-- Hotbcapuje Popup Ad -->
+  <script type="text/javascript" src="https://hotbcapuje.cc/process.js?id=1389179118&p1=sub1&p2=sub2&p3=sub3&p4=sub4" async></script>
+</body>
 </html>
